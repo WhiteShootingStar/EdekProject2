@@ -63,7 +63,7 @@ public class ServerThread extends Thread {
 				map.put(datagram.getAddress().toString(), temp);
 
 				System.out.println(port);
-				notifyAll();
+				//notifyAll();
 			}
 
 		} else if (!isFirst && !isLast) {
@@ -78,7 +78,7 @@ public class ServerThread extends Thread {
 					System.out.println("Something is wrong else");
 				}
 			}
-			notifyAll();
+			//notifyAll();
 		}
 
 		else {
@@ -96,7 +96,7 @@ public class ServerThread extends Thread {
 				}
 
 			}
-			notifyAll();
+			//notifyAll();
 		}
 	}
 

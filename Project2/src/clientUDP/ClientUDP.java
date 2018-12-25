@@ -36,12 +36,15 @@ public class ClientUDP {
 
 				System.out.println("Will send to " + adr + " " + ports[i]);
 				soc.send(query);
-				soc.send(query);
+				Thread.sleep(1);
 			}
 		} catch (SocketException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
